@@ -13,18 +13,20 @@ st.subheader("Choose a Task To Execute:")
 
 option = st.radio('##### Options:', ('Named Entity Recognition', 'Sentiment Analysis', 'Text Summarization', 'Machine Translation'))
 
+btn = st.button("submit")
 
 
-
-
-if option == 'Named Entity Recognition':
-    ner(input)
-if option == 'Sentiment Analysis': 
-    st.subheader('Sentiment Analysis:')
-    sentiment_analysis(input)
-if option == 'Text Summarization':
-    st.subheader('Text Summarization:')
-    summarize(input)
-if option == 'Machine Translation':
-        st.subheader('Translation:')
-        translate(input)
+if btn:
+    if option == 'Named Entity Recognition':
+        ner(input)
+    if option == 'Sentiment Analysis': 
+        st.subheader('Sentiment Analysis')
+        sentiment_analysis(input)
+    if option == 'Text Summarization':
+        st.subheader('Text Summarization')
+        summarize(input)
+    if option == 'Machine Translation':
+         st.subheader('Translation')
+         translate(input)
+else:
+    pass
