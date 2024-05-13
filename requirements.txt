@@ -5,3 +5,4 @@ spacytextblob
 streamlit
 torch
 transformers
+SentencePiece
