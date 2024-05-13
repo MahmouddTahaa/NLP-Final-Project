@@ -1,0 +1,8 @@
+numpy==1.24.3
+spacy==3.7.4
+spacy_streamlit==1.0.6
+spacytextblob==4.0.0
+streamlit==1.30.0
+streamlit==1.33.0
+torch==2.3.0
+transformers==4.36.2
