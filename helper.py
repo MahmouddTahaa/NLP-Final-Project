@@ -20,7 +20,7 @@ def sentiment_analysis(input):
     
 
 def summarize(input):
-    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+    summarizer = pipeline("summarization")
     summary = summarizer(input, max_length=50, do_sample=False)
     st.success(summary[0]['summary_text'])
 
